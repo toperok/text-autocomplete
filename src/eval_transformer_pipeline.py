@@ -33,6 +33,7 @@ def evaluate_transformer(val_texts, config):
             prompt, 
             max_new_tokens=20,
             num_return_sequences=1, 
+            max_length=None,
             do_sample=False, 
             temperature=None, 
             top_p=None,

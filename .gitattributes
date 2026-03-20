@@ -1,1 +1,2 @@
 * text=auto eol=lf
+models/lstm_autocomplete.pt filter=lfs diff=lfs merge=lfs -text
