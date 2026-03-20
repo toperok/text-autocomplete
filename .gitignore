@@ -17,13 +17,6 @@ data/*.json
 data/*.parquet
 !data/.gitkeep
 
-# Models and weights
-models/*.pt
-models/*.pth
-models/*.bin
-models/*.onnx
-models/*.h5
-
 # Confidential data and logs
 .env
 logs/
