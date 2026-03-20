@@ -1,0 +1,36 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Data
+requirements_sprint_2_project.txt
+data/*.txt
+data/*.csv
+data/*.json
+data/*.parquet
+!data/.gitkeep
+
+# Models and weights
+models/*.pt
+models/*.pth
+models/*.bin
+models/*.onnx
+models/*.h5
+
+# Confidential data and logs
+.env
+logs/
+*.log
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Sys files
+.DS_Store

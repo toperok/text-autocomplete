@@ -1,0 +1,40 @@
+# Path configurations
+paths:
+  data_dir: "data"
+  raw_data_url: "https://code.s3.yandex.net/deep-learning/tweets.txt"
+  processed_path: "data/dataset_processed.csv"
+  train_path: "data/train.csv"
+  val_path: "data/val.csv"
+  test_path: "data/test.csv"
+  model_save_path: "models/lstm_autocomplete.pt"
+
+# Dataset split ratios
+split:
+  train_size: 0.8
+  val_size: 0.1
+  test_size: 0.1
+  random_state: 42
+
+# Data parameters
+data:
+  max_seq_len: 128
+  batch_size: 64
+  vocab_size: 25000
+  
+# LSTM Hyperparameters
+model:
+  embedding_dim: 256
+  hidden_dim: 1024
+  num_layers: 2
+  dropout: 0.2
+
+# Training settings
+training:
+  learning_rate: 0.001
+  epochs: 3
+  device: "auto"
+
+# Inference settings
+inference:
+  max_generated_tokens: 20
+  transformer_model: "distilgpt2"
